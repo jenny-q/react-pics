@@ -1,8 +1,12 @@
-import { useState } from 'react'
+import searchImages from "./api";
+import SearchBar from "./components/SearchBar";
 
 function App() {
+  const handleSubmit = (term) => {
+    searchImages(term)
+  }
   return (
-    <p>App</p>
+    <SearchBar onSubmit={handleSubmit} />
   )
 }
 
