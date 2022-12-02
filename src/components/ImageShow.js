@@ -1,6 +1,8 @@
-function ImageShow() {
+function ImageShow({image}) {
     return (
-      <p>test</p>
+      <div>
+        <img src={image.urls.small} data-id={image.id} alt={image.alt_description} />
+      </div>
     )
   }
   
